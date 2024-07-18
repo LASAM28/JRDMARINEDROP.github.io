@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700&display=swap" rel="stylesheet">
+    <title>Product Card</title>
+</head>
+<body>
+    <div id="Everything">
+        <div class="container">
+            <div class="card">
+                <div class="shoeBackground">
+                    <div class="gradients">
+                        <div class="gradient second" color="blue"></div>
+                        <div class="gradient" color="red"></div>
+                        <div class="gradient" color="green"></div>
+                        <div class="gradient" color="pink"></div>
+                        <div class="gradient" color="black"></div>
+                    </div>
+                    <h1 class="nike">J.R.D</h1>
+                    <img src="img/logo.png" alt="" class="logo">
+                    <a href="#" class="share"><i class="fas fa-share-alt"></i></a>
+
+                    <img src="img/blue.png" alt="" class="shoe show" color="blue">
+                    <img src="img/red.png" alt="" class="shoe" color="red">
+                    <img src="img/green.png" alt="" class="shoe" color="green">
+                    <img src="img/orange.png" alt="" class="shoe" color="pink">
+                    <img src="img/black.png" alt="" class="shoe" color="black">
+                </div>
+                <form action="#" method="post" class="info">
+                    <div class="shoeName">
+                        <div>
+                            <h1 class="big">JRD SUMMER Marine</h1>
+                            <span class="new">new</span>
+                        </div>
+                        <h3 class="small">2k24 Limited Drop</h3>
+                    </div>
+                    <div class="description">
+                        <h3 class="title">Product Info</h3>
+                        <p class="text">Plongez dans l'été avec la collection "Summer Marine". Chaque montre de cette gamme capture l'essence de cette saison chaude.</p>
+                    </div>
+                    <div class="color-container">
+                        <h3 class="title">Color</h3>
+                        <div class="colors">
+                            <label class="color active" style="background-color:#2175f5;">
+                                <input type="radio" name="color" value="blue" hidden checked>
+                            </label>
+                            <label class="color" style="background-color:#f84848;">
+                                <input type="radio" name="color" value="red" hidden>
+                            </label>
+                            <label class="color" style="background-color:#29b864;">
+                                <input type="radio" name="color" value="green" hidden>
+                            </label>
+                            <label class="color" style="background-color:#c71ac7;">
+                                <input type="radio" name="color" value="pink" hidden>
+                            </label>
+                            <label class="color" style="background-color:#444;">
+                                <input type="radio" name="color" value="black" hidden>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="size-container">
+                        <h3 class="title">Size</h3>
+                        <div class="sizes">
+                            <label class="size active">
+                                <input type="radio" name="size" value="36mm" hidden>
+                                36mm
+                            </label>
+                            <label class="size">
+                                <input type="radio" name="size" value="41mm" hidden>
+                                41mm
+                            </label>
+                        </div>
+                    </div>
+                    <div class="buy-price">
+                        <div class="price">
+                            <i class="fas fa-euro-sign"></i>
+                            <h1>...</h1>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div> 
+        <section class="product" id="product">
+            <div class="section__container product__container">
+              <div class="product__grid">
+                <div class="product__image">
+                  <img src="img/blue.png" alt="product" />
+                </div>
+                <div class="product__content">
+                  <div class="product__card">
+                    <h4>Bracelet</h4>
+                    <p>Acier Inoxydable</p>
+                    <p>Optez pour l'excellence avec notre bracelet en acier inoxydable, conçue pour résister aux défis du quotidien. Grâce à sa robustesse exceptionnelle et sa résistance aux rayures, votre montre conservera son éclat et sa beauté. L'acier inoxydable, réputé pour sa résistance à la corrosion et à l'oxydation, garantit une apparence toujours impeccable, même en contact avec l'eau et la transpiration.
+                   </p>
+                  </div>
+                  <div class="product__card">
+                    <h4>Mouvement</h4>
+                    <p>Automatique</p>
+                    <p>Équipée d'un mécanisme sophistiqué qui s'auto-alimente grâce aux mouvements de votre poignet, cette montre vous offre une exactitude horlogère inégalée. Dites adieu aux tracas des piles à remplacer et profitez d'un garde-temps qui fonctionne en parfaite harmonie avec vous.
+                    </p>
+                  </div>
+                  <div class="product__card">
+                    <div class="product__btn">
+                        <button class="btn" id="buyButton">Acheter</button>
+                    </div>            
+            </div>
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Completer Votre Achat</h2>
+                    <form id="purchaseForm" action="submit-form" method="POST">
+                        <div class="form-group">
+                            <label for="color">Couleur</label>
+                            <select id="color" name="color" required>
+                                <option value="blue">Bleu</option>
+                                <option value="red">Rouge</option>
+                                <option value="green">Vert</option>
+                                <option value="pink">Rose</option>
+                                <option value="black">Noir</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="size">Taille</label>
+                            <select id="size" name="size" required>
+                                <option value="36mm">36mm</option>
+                                <option value="41mm">41mm</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="name">Prénom Nom</label>
+                            <input type="name" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="address" placehol="">Adresse</label>
+                            <input type="text" id="address" name="address" placeholder="N° Rue Code Postal Ville" required>
+                        </div>
+                        <div id="paypal-button-container"></div>
+                    </form>
+                </div>
+            </div>
+        
+          </section>
+          <script src="https://unpkg.com/scrollreveal"></script>
+          <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+          <script src="main.js"></script>             
+    </div>
+    <script src="https://www.paypal.com/sdk/js?client-id=AVZns95YsXQ8fUXQXRG6YFjRpIT7QHTOFNzSEiCq2IpQnMQ6aOifS2xUAHAFNhi67IcVgGE5Bet_yapi"></script>
+    <script src="app.js"></script>
+</body>
+</html>
